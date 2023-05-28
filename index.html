@@ -1,18 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIT - Github</title>
-    <link rel="stylesheet" href="css/main.css">
+
+    <title>PeMAS Arquitectura</title>
+    <!-- Hoja estilos NAVBAR -->
+    <link rel="stylesheet" href="css/sass/styles.css"> 
+    <!-- Estilos ICONO WHATSAPP -->
+    <link rel="stylesheet" href="./css/fontello.css"> 
+    <!-- JS -->
+    
+    
+   <!--Vincular Favicon -->
+    <link href="img/pemasfavicon.jpg" rel="icon">
+
 </head>
+
 <body>
-    <header>
-        <h1>Comenzando con GIT</h1>
-        <h2>Y Github</h2>
+    <header class="header">
+        <!-- !CABECERA y/o MENU DE NAVIGATION-->
+        <div class="header__div">
+            <img src="img/pemas22.png" alt="Logo" class="header__img">
+            <h1 class="header__h1"> PeMAS <strong class="header__strong">Arquitectura</strong></h1>
+        </div>
+
+        <button class="header__button" id="boton-hamburguesa">
+        <span>&#9776;</span></button>
+
+        <nav class="header__nav" id="menu-hamburguesa">
+            <ul class="header__ul" >
+
+                <li class="header__li">
+                    <a href="index.html" class="header__a" >Inicio</a>
+                </li>
+
+                <li class="header__li">
+                    <a href="nosotros.html" class="header__a">Metodología</a>
+                </li>
+
+                <li class="header__li">
+                    <a href="contactos.html" class="header__a">Contacto</a>
+                </li>
+
+                <li class="header__li">
+                    <a href="renders.html" class="header__a">Galeria</a>
+                </li>
+
+
+                
+            </ul>
+        </nav>
+
     </header>
-    <main></main>
-    <footer></footer>
+    <!-- !MAIN-->
+    <main>
+        <!-- !SLIDER -->
+        <div  class="slider">
+            <ul class="slider__ul">
+                <li class="slider__li">
+                    <img src="img/Slider1.png" alt="imagen" class="slider__img">
+                </li>             
+                <li class="slider__li">
+                    <img src="img/Slider2.png" alt="imagen" class="slider__img">
+                </li>             
+                <li class="slider__li">
+                    <img src="img/Slider3.png" alt="imagen" class="slider__img">
+                </li>             
+                <li class="slider__li">
+                    <img src="img/Slider4.png" alt="imagen" class="slider__img">
+                </li>             
+            </ul>
+        </div>
+        <!-- !SECC1 -->
+        <section class="grid-container">
+            <div class="item1 "><img class="img-grid" src="./img/enventa-1.png" alt="En venta"></div>
+            <div class="item2">Casas</div>
+            <div class="item3 "><img class="img-grid" src="./img/edificios.png" alt="edificios"></div>
+            <div class="item4">Edificios</div>
+            <div class="item5 "><img class="img-grid" src="./img/casas-oficinas-150x150.png" alt="Oficinas"></div>
+            <div class="item6">Oficinas</div>
+       </section>
+       <!-- !SECC2 -->
+        <section class="contenido">
+            <div class="contenido__div">
+                <h3 class="contenido__h">QUIÉNES SOMOS</h3>
+                <h2 class="contenido__hs" >PeMAS Arquitectura</h2>
+                <div class="contenido__p">              
+                    <p class="p1">
+                        Somos un equipo de tres jóvenes arquitectos y amigos recibidos de la UNC que iniciamos este proyecto en 2021.
+                        <br>Tenemos experiencia en diseños de proyectos de interiorismo, Planos municipales, Branding y Diseño Gráfico.
+                        <br>Nuestro horizonte es la innovación y aprendizaje constante. 
+                        <br>Planteamos la Arquitectura como un servicio, donde la experiencia del cliente a lo largo del camino es tan importante como el resultado final. 	
+                        Para poder lograrlo nos enfocamos en la comunicación con buena energía y entera disposición.
+                        <br> Hacemos que se materialice la idea gestada por el cliente, llena de personalidad, sensaciones y experiencias porque nos parece tan importante
+                        lo que se vive en el lugar como los materiales con los que se dan los acabados finales.
+                        <br>Nuestro objetivo es crear espacios que al final de cuentas se sientan propios, únicos y plenos.
+                        <br> Nos apasiona nuestro trabajo.
+                    </p>
+                </div>
+ 
+            </div>
+        </section>
+
+    </main>
+    <!-- !ASIDE -->
+    <aside class="aside">
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="icon-whatsapp"></i></a>
+    </aside>
+    
+    <!-- !FOOTER -->
+    <footer>
+
+        <p>© 2023 Welly All Rights Reserved Privacy Policy Terms and Conditions <br>
+        ©Copyright 2023 Sarah's Sweet & Savory Snacks | All Rights Reserved | This site designed and hosted by Enter.Net
+        This site is protected by reCAPTCHA. Our Privacy Policy and Terms of Service apply
+        </p>
+       
+     </footer>
+
+
+     <script>
+        document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+          var menu = document.getElementById("menu-hamburguesa");
+          if (menu.style.display === "none") {
+            menu.style.display = "block";
+          } else {
+            menu.style.display = "none";
+          }
+        });
+      </script>
+
 </body>
+
 </html>

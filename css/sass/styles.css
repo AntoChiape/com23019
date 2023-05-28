@@ -1,0 +1,550 @@
+/* !USA SASS para facilitar indentado de los estilos. */
+@charset "UTF-8";
+.header {
+  width: 100%;
+  padding: 1em 0;
+  height: 8.2em;
+  /* Para dejar fijo en menu */
+  position: fixed;
+  background-color: rgba(36, 33, 33, 0.7);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* para alinear los elementos */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: end;
+}
+
+.header__div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1em;
+}
+
+.header__img {
+  width: 5em;
+}
+
+.header__h1 {
+  display: inline;
+  font-size: 2.2em;
+  line-height: 1.1em;
+  color: #fff;
+  margin-top: 1.6em;
+}
+
+.header__strong {
+  font-size: 0.6em;
+}
+
+.header__button {
+  display: none;
+}
+
+.header__svg {
+  width: 2em;
+  height: 3em;
+  fill: black;
+}
+
+.header__nav {
+  margin-right: 2em;
+  /*      z-index: 1000; */
+  display: block;
+}
+
+.header__ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: 4em;
+}
+
+.header__li {
+  margin: 0 1.8em;
+}
+
+.header__a {
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.header__a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1500px) {
+  .header__li {
+    margin: 0 1em;
+  }
+  .header__strong {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header__li {
+    margin: 0 0.5em;
+  }
+  .header__strong {
+    display: none;
+  }
+}
+@media (max-width: 860px) {
+  .header__button {
+    display: block;
+  }
+  #menu-hamburguesa {
+    display: none;
+    background-color: rgba(36, 33, 33, 0.7);
+    width: 120%;
+    text-align: center;
+    top: 10em;
+  }
+  .header__ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: flex-end;
+    margin-top: 4em;
+  }
+  #menu-hamburguesa ul li {
+    padding: 1em 0;
+    /* nuevo */
+  }
+  #menu-hamburguesa ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  #boton-hamburguesa {
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    font-family: sans-serif;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  #menu-hamburguesa.mostrando {
+    max-height: 300px; /* Ajustar este valor según la altura máxima del menú */
+  }
+  /* Cambio de color al pasar el cursor sobre los enlaces del menú */
+  #menu-hamburguesa ul li a:hover {
+    color: #8d662f;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.4em;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* (Opcional) */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* (Opcional) */
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.slider {
+  width: 100%;
+  height: 60em;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0%;
+  /* border: yellow solid 5px; */
+}
+
+.slider__ul {
+  display: flex;
+  animation: cambio 10s infinite alternate linear;
+  width: 400%;
+}
+
+.slider__li {
+  width: 100%;
+}
+
+.slider__img {
+  width: 100%;
+  top: -150em;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  55% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/*PRE-paso para usar Grid-template-area, nombrar las areas en cada item o elemento*/
+.item1 {
+  grid-area: img1;
+}
+
+.item2 {
+  grid-area: casas;
+}
+
+.item3 {
+  grid-area: img2;
+}
+
+.item4 {
+  grid-area: edificios;
+}
+
+.item5 {
+  grid-area: img3;
+}
+
+.item6 {
+  grid-area: oficinas;
+}
+
+.grid-container > div {
+  /*   text-align: center; */
+  /*  border: 1px solid #1e0808;  */
+  /*Codig CSS Standar 👁‍🗨⭕*/
+  width: 95%;
+  max-width: 1000px;
+  margin: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "img1 img2 img3" "img1 img2 img3" "img1 img2 img3" "casas edificios oficinas" "casas edificios oficinas" "casas edificios oficinas";
+  gap: 0px;
+  /*Codig CSS Standar 👁‍🗨⭕*/
+  width: 90%;
+  max-width: 1000px;
+  margin: 1em auto;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: overline;
+}
+
+.img-grid {
+  width: 6em;
+  height: 7em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.contenido__h {
+  font-size: 2em;
+  text-align: center;
+}
+
+.contenido__hs {
+  font-size: 3em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.contenido {
+  margin-top: 3em;
+  padding-bottom: 1em;
+  padding-top: 5em;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(171, 165, 165, 0.7)), url("/img/blancoynegro.jpg");
+  background-size: cover;
+  height: auto;
+}
+
+.contenido__div {
+  /*Codig CSS Standar 👁‍🗨⭕*/
+  width: 75%;
+  max-width: 1000px;
+  margin: 1em auto;
+}
+
+p {
+  font-size: 1.4em;
+  margin: 1.2em;
+  line-height: 1.5em;
+  text-align: left;
+  /*     font-weight: bold; */
+}
+
+@media screen and (max-width: 1500px) and (min-width: 992.1px) {
+  .slider {
+    height: 35em;
+  }
+}
+@media (max-width: 992px) {
+  .slider {
+    height: 27em;
+  }
+}
+@media (max-width: 860px) {
+  .slider {
+    height: 20em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: ".img1 ." ". casas . " ". img2 ." ". edificios ." ". img3 ." ". oficinas .";
+  }
+}
+.main__render {
+  background: linear-gradient(rgb(57, 55, 55), #fff);
+}
+
+.tit-casas {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.renders {
+  transition: all 0.9s ease;
+  width: 100%;
+  width: 500px;
+  overflow: hidden;
+  margin: auto;
+  padding: 5px;
+  /* line-height: 150px; */
+  color: #fff;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.renders:hover {
+  transform: scale(1.25);
+}
+
+.casas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.metodo {
+  color: rgb(97, 91, 91);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.body-metodo {
+  margin: 1rem;
+}
+
+.texto {
+  color: #dbd6d6;
+  /* text-align: center; */
+  margin-left: 2em;
+}
+
+.h2-render {
+  font-size: 3em;
+}
+
+.h3-render {
+  font-size: 5em;
+}
+
+.h4-render {
+  font-size: 2em;
+}
+
+.imgrender {
+  height: 20em;
+}
+
+#contacto {
+  background: linear-gradient(#fff, rgb(120, 116, 116), rgb(57, 55, 55));
+}
+
+.form__p {
+  font-size: 2.5em;
+  padding-top: 1em;
+}
+
+form {
+  width: 80%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  /* max-width: 500px; */
+  margin: 20px auto;
+}
+
+/* validacion js */
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+  color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+  border: 3px solid #bb2929;
+}
+
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo {
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background-color: #546a54;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form {
+  font-size: 30px;
+  margin: 20px auto;
+}
+
+body {
+  background: #fff;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.img-contacto {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background: linear-gradient(#fff, rgb(57, 55, 55));
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  font-size: 1em;
+}
+
+.container-api {
+  background-image: linear-gradient(rgba(12, 7, 7, 0.2), rgba(16, 14, 14, 0.7)), url("/img/madera.avif");
+  width: 50%;
+  margin-left: 25%;
+}
+
+.icon-whatsapp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.icon-whatsapp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}/*# sourceMappingURL=styles.css.map */

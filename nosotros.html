@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PeMAS Arquitectura</title>
+
+    <link rel="stylesheet" href="css/sass/styles.css"> <!-- Hoja estilos NAVBAR -->
+    <link rel="stylesheet" href="./css/fontello.css"> <!-- Estilos ICONO WHATSAPP -->
+    
+   <!--Vincular Favicon -->
+    <link href="img/pemasfavicon.jpg" rel="icon">
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- !CABECERA y/o MENU DE NAVIGATION-->
+        <div class="header__div">
+            <img src="img/pemas22.png" alt="Logo" class="header__img">
+            <h1 class="header__h1"> PeMAS <strong class="header__strong">Arquitectura</strong></h1>
+        </div>
+
+        <button class="header__button" id="boton-hamburguesa">
+        <span>&#9776;</span></button>
+
+        <nav class="header__nav" id="menu-hamburguesa">
+            <ul class="header__ul" >
+
+                <li class="header__li">
+                    <a href="index.html" class="header__a" >Inicio</a>
+                </li>
+
+                <li class="header__li">
+                    <a href="nosotros.html" class="header__a">Metodología</a>
+                </li>
+
+                <li class="header__li">
+                    <a href="contactos.html" class="header__a">Contacto</a>
+                </li>
+
+                <li class="header__li">
+                    <a href="renders.html" class="header__a">Galeria</a>
+                </li>
+
+
+                
+            </ul>
+        </nav>
+
+    </header>  
+    
+    <!-- !MENU DE MAIN-->
+    <main>
+        <img class="img-render" src="img/a1.jpg" alt="portada">
+
+        <section class="contenido">
+            <main class="body-metodo">
+                <h2 class="tit-metod">Metodología</h2><br>
+                <h4 class="metodo">1. Anteproyecto - Intercambio con el cliente y la toma de partido</h4><br>
+                <p>Con los datos del sitio, orientación, altimetría, relevamiento de árboles, los requerimientos del programa (pedidos por el cliente y sugeridos) se comienza a trabajar en la toma de partido. Empieza el intercambio con el cliente y se profundiza en el diseño, evaluando la implantación en el sitio y los métodos constructivos para la concreción de la obra. En esta etapa se elabora la documentación básica y primaria: plantas, cortes, vistas, maqueta digital y video de aproximación.</p>
+        <br>
+                <h4 class="metodo">2. Proyecto - En todos y cada uno de los detalles</h4><br>
+                <p>Se profundiza el anteproyecto resolviendo los detalles constructivos, elaborando el legajo de obra, planos de estructura, replanteos, planillas de carpinterías, planos de instalaciones. Se trabaja en equipo con los ingenieros a fin de tener el cálculo de estructuras, térmico y el dimensionado eléctrico. Además, se hacen los cálculos para definir el presupuesto de los materiales y los gremios que intervienen.</p>
+        <br>
+                <h4 class="metodo">3. Gestión - Presentación de documentación</h4><br>
+                <p>Presentación antes los diferentes entes de control de la documentación necesaria para obtener todos los permisos de construcción y de conexión a servicios. (Colegio de Arquitectos, municipios, entes energéticos).</p>
+        <br>
+                <h4 class="metodo">4. Dirección de obra - Puesta en marcha</h4><br>
+                <p>Se verifica la correcta concreción de todos los procesos constructivos de la obra. En esta fase se realiza el seguimiento periódico de la misma controlando la calidad de los materiales empleados y la construcción dentro de los tiempos estipulados. La dirección de obra se encarga de la logística y la resolución de trabajos in situ, y de que la materialización y los métodos empleados para la misma sean los consignados en los planos de proyecto. Esta tarea implica asumir la responsabilidad mediando ante el comitente y los organismos de control.</p>
+        <br>
+            </main>
+        </section>
+
+        <!-- <img src="/img/la-arquitectura-1.jpg" alt="laArquitectura">
+        <p class="contenido__div">Mi amor por la arquitectura lo es todo tanto así que aveces me exijo a mismo para poder hacer lo que yo quiero rompiendo parámetros,originando sorpresa,y a la vez tratar que le guste al cliente, retándome cada día por ser mejor y aveces fracaso en ese intento pero eso si no cometo el erro dos veces, duermo, sueño, vivo la arquitectura, es así y sera así siempre</p> -->
+<!--         <img src="/img/la-arquitectura-1.jpg" alt="laArquitectura"> -->
+
+    </main>
+
+    <!-- !ASIDE -->
+    <aside class="aside">
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="icon-whatsapp"></i></a>
+    </aside>
+
+    <!-- !FOOTER -->
+    <footer>
+
+        <p>© 2023 Welly All Rights Reserved Privacy Policy Terms and Conditions</p>
+        
+            <p>© Copyright 2023 Sarah's Sweet & Savory Snacks | All Rights Reserved | This site designed and hosted by Enter.Net
+                This site is protected by reCAPTCHA. Our Privacy Policy and Terms of Service apply</p>
+
+    </footer>
+        <!-- js para el menu -->
+        <script>
+            document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+              var menu = document.getElementById("menu-hamburguesa");
+              if (menu.style.display === "none") {
+                menu.style.display = "block";
+              } else {
+                menu.style.display = "none";
+              }
+            });
+          </script>
+</body>
+
+</html>

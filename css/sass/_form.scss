@@ -1,0 +1,75 @@
+#contacto{
+  background: linear-gradient(#fff, rgb(120, 116, 116), rgb(57, 55, 55));
+}
+
+.form__p{
+  font-size: 2.5em;
+  padding-top: 1em;
+}
+
+form {
+  width: 80%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    /* max-width: 500px; */
+    margin: 20px auto;
+  }
+  /* validacion js */
+  .formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+  }
+  
+  .formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+  }
+  
+  .formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+  }
+  
+  .formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+  }
+
+  .formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+  }
+  .formulario__input-error-activo {
+    display: block;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  button{
+    background-color: #546a54;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+.form{
+    
+    font-size: 30px;
+    margin: 20px auto;
+}

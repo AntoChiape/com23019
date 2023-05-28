@@ -1,0 +1,60 @@
+@use '_menu';
+@use '_reset';
+@use '_inicio';
+@use '_render';
+@use '_form';
+
+
+//*  body*/
+body {
+  background: #fff;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+//*  Contactos*/
+
+.img-contacto{
+  width: 100%;
+  height: auto;
+  }
+
+
+//*  FOOTER*/
+footer{
+  background: linear-gradient(#fff, rgb(57, 55, 55));
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  font-size: 1em;
+             
+}
+
+.container-api{
+  background-image: 
+  linear-gradient(rgba(12, 7, 7, 0.2), rgba(16, 14, 14, 0.7)), url('/img/madera.avif');
+  width: 50%;
+  margin-left: 25%;
+}
+
+//* ICONO DE WHATSAPP A LA DERECHA, FLOTANTE -*/
+.icon-whatsapp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.icon-whatsapp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}

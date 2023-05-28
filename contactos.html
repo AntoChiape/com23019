@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PeMAS Arquitectura</title>
+
+    <link rel="stylesheet" href="css/sass/styles.css"> <!-- Hoja estilos NAVBAR -->
+    <link rel="stylesheet" href="./css/fontello.css"> <!-- Estilos ICONO WHATSAPP -->
+    
+   <!--Vincular Favicon -->
+    <link href="img/pemasfavicon.jpg" rel="icon">
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- !CABECERA y/o MENU DE NAVIGATION-->
+        <div class="header__div">
+            <img src="img/pemas22.png" alt="Logo" class="header__img">
+            <h1 class="header__h1"> PeMAS <strong class="header__strong">Arquitectura</strong></h1>
+        </div>
+
+        <button class="header__button" id="boton-hamburguesa">
+        <span>&#9776;</span></button>
+
+        <nav class="header__nav" id="menu-hamburguesa">
+            <ul class="header__ul" >
+
+                <li class="header__li">
+                    <a href="index.html" class="header__a" >Inicio</a>
+                </li>
+
+                <li class="header__li">
+                    <a href="nosotros.html" class="header__a">Metodología</a>
+                </li>
+
+                <li class="header__li">
+                  <a href="contactos.html" class="header__a">Contacto</a>
+              </li>
+
+                <li class="header__li">
+                    <a href="renders.html" class="header__a">Galeria</a>
+                </li>
+
+
+                
+            </ul>
+        </nav>
+
+    </header>
+    <!-- !MAIN-->
+    <main>
+        <img class="img-render" src="img/a1.jpg" alt="portada">
+        <section id="contacto">
+            <p class="form__p">Contactanos</p>
+            <form id="formulario" method="post">
+              <div id="gusuario">
+                <label class="formulario__label"for="nombre">Nombre:</label>
+                <input class="formulario__input" type="text" id="nombre" name="nombre" required>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			        
+              </div>
+                <br>
+              <div id="gemail">
+                <label class="formulario__label" for="email">Email:</label>
+                <input class="formulario__input" type="email" id="email" name="email" required>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+              </div>
+                <br>
+                <label for="mensaje">Mensaje:</label> <br>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+                <br>
+              </form>
+              <br>
+              
+              
+        </section>
+    </main>
+    <!-- !IFRAME -->
+    <div class="iframe">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13391.574990812753!2d-60.64012225!3d-32.95381454999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1e776c2b0d%3A0x3bcd2cbb2df01aa8!2sParque%20Nacional%20a%20la%20Bandera!5e0!3m2!1ses-419!2sar!4v1681068051794!5m2!1ses-419!2sar"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- !ASIDE -->
+    <aside class="aside">
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="icon-whatsapp"></i></a>
+    </aside>
+
+    <!-- !FOOTER -->
+    <footer>
+
+        <p>© 2023 Welly All Rights Reserved Privacy Policy Terms and Conditions</p>
+        
+            <p>© Copyright 2023 Sarah's Sweet & Savory Snacks | All Rights Reserved | This site designed and hosted by Enter.Net
+                This site is protected by reCAPTCHA. Our Privacy Policy and Terms of Service apply</p>
+
+    </footer>
+    <!-- validacion con js para el formulario -->
+    <script src="js/formulario.js"></script>
+    <!-- js para el menu -->
+    <script>
+        document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+          var menu = document.getElementById("menu-hamburguesa");
+          if (menu.style.display === "none") {
+            menu.style.display = "block";
+          } else {
+            menu.style.display = "none";
+          }
+        });
+      </script>
+</body>
+
+</html>

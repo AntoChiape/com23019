@@ -1,0 +1,70 @@
+
+.main__render{
+  background: linear-gradient(rgb(57, 55, 55), #fff);
+}
+
+.tit-casas {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .renders {
+    transition:all .9s ease; 
+    width:100%;
+    width:500px;
+    overflow:hidden;
+    margin: auto;
+  
+    padding: 5px;
+    /* line-height: 150px; */
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  .renders:hover {
+    transform:scale(1.25)
+  }
+  
+  .casas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /* padding: 0;
+    margin: 0; */
+  }
+    
+  .metodo {
+    color: rgb(97, 91, 91);
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .body-metodo {
+    margin: 1rem;
+  }
+  
+  .texto{
+    color: #dbd6d6;
+    /* text-align: center; */
+    margin-left: 2em;
+
+  }
+  .h2-render{
+    font-size: 3em ;
+  }
+
+  .h3-render{
+    font-size: 5em ;
+  }
+
+  .h4-render{
+    font-size: 2em ;
+  }
+
+
+  .imgrender{
+    height: 20em;
+  }
